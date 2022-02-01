@@ -1,0 +1,137 @@
+*{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+}
+
+.mainbackground{
+	width:100%;
+	height:100vh;
+	background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(background.png);
+	background-repeat:no-repeat;
+	background-size: 100% 100%;
+}
+
+.mainheader{
+	width:100%;
+	height:15vh;
+	display:flex;
+	justify-content:space-between;
+	align-items:center;
+}
+
+.mainheader .logo{
+	width:25%;
+	text-align:center;
+	color:#48dbfb;
+	font-size:15px;
+}
+
+.mainheader nav {
+	width:45%; 
+	display: flex;
+	justify-content:space-around;
+}
+
+.mainheader nav a{
+   margin-right: 80px;
+	text-decoration:none;
+	font-size:23px;
+	color:white;
+	font-weight: 500;
+}
+
+main{
+	width:100%;
+	height:85vh;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    margin-bottom: 
+}
+
+main section{
+	text-align:center;
+	color:white;
+}
+
+main section h3{
+	font-size:30px;
+	font-weight:lighter;
+	letter-spacing: 4px;
+	text-shadow:1px 1px 3px black;
+}
+
+main section h1{
+	font-size:40px;
+	font-weight:100;
+	text-transform:uppercase;
+	text-shadow:2px 1px 6px black;
+	margin:20px 0px 20px 0px;
+}
+
+main section p{
+	font-size:20px;
+	text-shadow:0.5px 0.5px 2px black;
+	word-spacing:2px; 
+	margin-bottom:30px;
+}
+
+section a{
+	padding:12px 30px;
+	text-decoration: none;
+	text-transform:uppercase;
+	border-radius:10px;
+	outline:none;
+	font-size: 15px;
+	letter-spacing: 1px;
+	transition:all .5s ease;
+}
+
+section .firstbtn{
+	background-color: white;
+	color:#006266;
+	margin-right: 10px;
+	text-shadow: 0.5px 0.5px 1px #006266;
+}
+
+ .firstbtn:hover{
+ 	background-color:#006266;
+	color:white;
+ }
+
+section .secondbtn{
+	background-color:#006266;
+	color:white;
+}
+
+.secondbtn:hover{
+	background-color: white;
+	color:#006266;
+	text-shadow: 0.5px 0.5px 1px #006266;
+}
+
+.animate__animated{
+	animation-iteration-count: infinite;
+	animation-duration:2s;
+	animation-timing-function: linear;
+}
+
+.changename:after{
+	content:"";
+	animation-name:changename;
+	animation-duration: 18s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+	color:#18dcff;
+}
+
+@keyframes changename{
+	0%{content:"Marine Drive"}
+	20%{content:"Gateway of India"}
+	40%{content:"The Taj Mahal Palace"}
+	60%{content:"Shree Siddhivinayak Temple"}
+	80%{content:"Taste Mumbai's Wadapao"}
+	100%{content:"Explore the Bollywood"}
+}
+
